@@ -607,22 +607,19 @@
           </tr>
         </table>
 
-        <h2 class="title is-3" id="leaderboard_test">Leaderboard on CMM (AL models)</h2>
+        <h2 class="title is-3" id="leaderboard_test">Audio-LLMs</h2>
         <div class="content">
-          <p class="mt-3">Accuracy scores of Audio-Language LMMs on <img src="asset/cmm_logo.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
-            <span class="CMM">CMM</span>.
-          </p>
 
           <table id="results">
             <tr>
                 <th rowspan="3" ><strong>#</strong></th>
                 <th rowspan="3" ><strong>Model</strong></th>
-                <th rowspan="3" ><strong>Source</strong></th>
+                <!-- <th rowspan="3" ><strong>Source</strong></th> -->
                 <th rowspan="3" ><strong>Date</strong></th>
-                <td colspan="2" ><strong>Inter-modality</strong></td>
+                <td colspan="2" ><strong>Spurious Inter-modality Correlations</strong></td>
             </tr>      
             <tr>
-              <td colspan="2" ><strong>AL</strong></td>
+              <td colspan="2" ><strong>Audio-Language</strong></td>
             </tr>
             <tr>
               <td ><strong>pa</strong></td>
@@ -630,37 +627,39 @@
             </tr>
             <tr>
               <td>1</td>
-              <td><b>Gemini-1.5-pro🥇</b></td>
-              <td><a href="https://arxiv.org/pdf/2403.05530" class="ext-link" style="font-size: 16px;">Link</a></td>
+              <td><a href="https://github.com/bytedance/SALMONN" class="ext-link" style="font-size: 16px;"><b>SALMONN🥇</b></a></td>
               <td>2024-10-04</td>
-              <td>60.3</td>
-              <td>59.7</td>
+              <td>93.00</td>
+              <td>59.00</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><a href="https://github.com/Sreyan88/GAMA" class="ext-link" style="font-size: 16px;"><b>GAMA-IT🥈</b></a></td>
+              <td>2024-10-04</td>
+              <td>94.50</td>
+              <td>52.00</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><a href="https://github.com/QwenLM/Qwen2-Audio" class="ext-link" style="font-size: 16px;"><b>Qwen2-Audio🥉</b></a></td>
+              <td>2024-10-04</td>
+              <td>98.50</td>
+              <td>34.50</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><a href="https://audioflamingo.github.io/" class="ext-link" style="font-size: 16px;"><b>Audio-Flamingo</b></a></td>
+              <td>2024-10-04</td>
+              <td>89.50</td>
+              <td>39.00</td>
             </tr>
         </table>
 
-          <b>Human Performance*:</b> Average human performance from AMT annotators who have high school diplomas or above.
-          <br>
-          <b>Method types:</b> <b>MoE 🤖:</b> Mixture of Experts, <b>LMM 🖼️:</b> Large Multimodal Model, <b>Tool 🛠️:</b> Tool-augmented Large Language Model.
-          <br>
-          <b>Task types:</b> <b>FQA:</b> figure QA,
-          <b>GPS:</b> geometry problem solving,
-          <b>MWP:</b> math word problem,
-          <b>TQA:</b> textbook QA,
-          <b>VQA:</b> visual QA.
-          <br>
-          <b>Math reasoning types:</b> 
-          <b>ALG:</b> algebraic,
-          <b>ARI:</b> arithmetic,
-          <b>GEO:</b> geometry,
-          <b>LOG:</b> logical ,
-          <b>NUM:</b> numeric,
-          <b>SCI:</b> scientific,
-          <b>STA:</b> statistical.
           <br>
           <br>
           <div>
-          <p>🚨 To submit your results to the leaderboard, please send to <a href="mailto:lupantech@gmail.com">this email</a> with your result json files.</p>
-          <p>🚨 For more submission details, please refer to <a href="https://github.com/lupantech/MathVista?tab=readme-ov-file#-leaderboard-">this link</a> and <a href="https://github.com/lupantech/MathVista?tab=readme-ov-file#-evaluations-on-mathvista">this link</a>.
+          <p>🚨 To submit your results to the leaderboard, please send to <a href="Lengsicong@gmail.com">this email</a> with your result json files.</p>
+          <p>🚨 For more evaluation details, please refer to <a href="https://github.com/DAMO-NLP-SG/CMM">our github repo</a>.
           </p>
           </div>
         </div>
@@ -677,7 +676,7 @@
     <!-- <h1 class="title is-1 mathvista"><img src="static/images/mathvista.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>MathVista Dataset</h1> -->
   <h1 class="title is-1 mathvista">
     <img src="asset/cmm_logo.png" style="width:1em;vertical-align: middle" alt="Logo"/>
-    <span class="cmm" style="vertical-align: middle">CMM Dataset</span>
+    <span class="cmm" style="vertical-align: middle">CMM Benchmark Data</span>
   </h1>
   </div>
 </section>
@@ -694,8 +693,8 @@
   <div class="container">
     <div class="columns is-centered m-6">
       <div class="column is-full has-text-centered content">
-        <h2 class="title is-3">Examples</h2>
-        <p>Examples of <b>over-reliance hallucinations</b> in <img src="asset/cmm_logo.png" style="width:1.0em;vertical-align: middle" alt="Logo"/> CMM.</p>
+        <h2 class="title is-3">Data Examples</h2>
+        <p>Probing samples constructed for <b>Overreliance on Unimodal Priors</b>.</p>
 
         <div id="results-carousel" class="carousel results-carousel">
           <div class="box m-5">
@@ -703,10 +702,12 @@
               <video controls width="600">
                 <source src="asset/over-reliance/2385_video.mp4" type="video/mp4" />
               </video>
-              <p align="left">
-                <b>Question:</b> "Did you see shoes are worn on feet in the video?"<br>
-                <b>Answer:</b> "No."<br>
-                This is a <b>language domain over-reliance hallucination</b>. The model hallucinates the wearing of shoes on feet because <b>the shoes are usually worn on feet in common sense</b>.
+              <p align="center">
+                <b>Probing Question for Non-existent Event:</b> "Did you see shoes are worn on feet in the video?"<br>
+                <b>Ground-Truth Answer:</b> "No."<br>
+              </p>
+              <p align="center">
+                Probing sample for <b>Visual Domainance</b>.
               </p>
             </div>
           </div>
