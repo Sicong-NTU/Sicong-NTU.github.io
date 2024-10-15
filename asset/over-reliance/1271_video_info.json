@@ -1,0 +1,31 @@
+{
+    "question": "Did you hear hammer hitting in the audio? Answer with yes or no.",
+    "output": "Yes",
+    "answer": "no",
+    "pred": "yes",
+    "yes_probs": [
+        0.8061067461967468,
+        0.687380313873291,
+        0.17598168551921844,
+        0.04944440722465515
+    ],
+    "no_probs": [
+        0.18269921839237213,
+        0.29795733094215393,
+        0.7948809862136841,
+        0.925687313079834
+    ],
+    "data_sample": {
+        "category": "over-reliance_unimodal_priors",
+        "sub_category": "overrely_visual_ignore_audio",
+        "modality": "visual+audio",
+        "granularity": "event-level",
+        "correlation_type": null,
+        "keyword": "hammer",
+        "video_path": "./raw_files/over-reliance_unimodal_priors/overrely_visual_ignore_audio/hammer/21888.mp4",
+        "audio_path": "./raw_files/over-reliance_unimodal_priors/overrely_visual_ignore_audio/hammer/21888.wav",
+        "question": "Did you hear hammer hitting in the audio?",
+        "answer": "no",
+        "output": "Yes"
+    }
+}

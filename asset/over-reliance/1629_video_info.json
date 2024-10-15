@@ -1,0 +1,31 @@
+{
+    "question": "Did you see thunder in the video? Answer with yes or no.",
+    "output": "Yes.",
+    "answer": "no",
+    "pred": "yes",
+    "yes_probs": [
+        0.4713016152381897,
+        0.4554532432556152,
+        0.01140669547021389,
+        0.013505497016012669
+    ],
+    "no_probs": [
+        0.06789743900299072,
+        0.13001781702041626,
+        0.5896404981613159,
+        0.5924975872039795
+    ],
+    "data_sample": {
+        "category": "over-reliance_unimodal_priors",
+        "sub_category": "overrely_audio_ignore_visual",
+        "modality": "visual+audio",
+        "granularity": "object-level",
+        "correlation_type": null,
+        "keyword": "thunder rumble none",
+        "video_path": "./raw_files/over-reliance_unimodal_priors/overrely_audio_ignore_visual/thunder/62258.mp4",
+        "audio_path": "./raw_files/over-reliance_unimodal_priors/overrely_audio_ignore_visual/thunder/62258.wav",
+        "question": "Did you see thunder in the video?",
+        "answer": "no",
+        "output": "Yes."
+    }
+}

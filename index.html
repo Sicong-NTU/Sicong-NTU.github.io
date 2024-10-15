@@ -188,7 +188,7 @@
               </span>
               <!-- Dataset Link. -->
               <span class="link-block">
-                <a href=""
+                <a href="https://huggingface.co/datasets/DAMO-NLP-SG/CMM"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <!-- <i class="far fa-images"></i> -->
@@ -238,6 +238,81 @@
 
 
 <section class="section">
+  <div class="container" style="margin-bottom: 2vh;">
+    <div class="columns is-centered has-text-centered">
+      <!-- <div class="column is-full-width has-text-centered"> -->
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Overview</h2>
+        <div class="content has-text-justified">
+          <p>
+          Recent advancements in large multimodal models (LMMs) have significantly enhanced performance across diverse tasks, with ongoing efforts to further integrate additional modalities such as video and audio. However, most existing LMMs remain vulnerable to hallucinations, <b>the discrepancy between the factual multi-modal input and the generated textual output</b>, which has limited their applicability in various real-world scenarios. This paper presents the first systematic investigation of hallucinations in LMMs involving the three most common modalities: language, visual, and audio. Our work distinguishes from existing benchmarks through four key features:
+          <ul>
+            <li><b>Essential Multi-Modalities:</b> We analyze hallucinations and evaluate LMMs across the three fundamental modalities: Language, Visual, and Audio.</li>
+            <li><b>Systematic Hallucination Investigation:</b> Our study reveals two key contributors to hallucinations: <b>overreliance on unimodal priors</b> and <b>spurious inter-modality correlations.</b></li>
+            <li><b>Comprehensive Diagnosis:</b> CMM defines hallucinations with nuanced subcategories and granularities, enabling comprehensive diagnosis of LMM vulnerabilities across various modalities.</li>
+            <li><b>Quality in Annotations:</b> All data are newly annotated by humans, not from any existing video dataset, ensuring diversity and quality.</li>
+          </ul>
+          </p>
+
+          <!-- <div id="results-carousel" class="carousel results-carousel">
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/images/our_new_3_datasets.png" alt="algebraic reasoning" width="80%"/>
+                <p> Examples of our newly annotated datasets: IQTest, FunctionQA, and PaperQA.</p>
+              </div>
+            </div>
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/images/source_dataset.png" alt="arithmetic reasoning" width="50%"/>
+                <p> Summary of the 31 different source datasets in <img src="static/images/mathvista.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
+                  <span class="mathvista">MathVista</span>.
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <p>
+            All the data examples were divided into two subsets: testmini and test. 
+            <ul>
+              <li><b>testmini</b>: 1,000 examples used for model development, validation, or for those with limited computing resources.</li>
+              <li><b>test</b>: 5,141 examples for standard evaluation. Notably,
+                the answer labels for test will NOT be publicly released.</li>
+            </ul>
+            You can download the dataset on <a href="https://huggingface.co/datasets/AI4Math/MathVista" target="_blank">Hugging Face Dataset</a>.
+          </p> -->
+
+        </div>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column" style="margin-right: 0rem;">
+        <div class="content has-text-centered">
+          <img src="asset/data_comp1.png" alt="data-overview" style="max-width: 70%;"/>
+          <p> 
+            Composition of <img src="asset/cmm_logo.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
+            <span class="mathvista">CMM</span> dataset.<br/>
+          </p> 
+        </div>
+      </div>
+      </div>
+      <div class="columns is-centered">
+        <div class="column" style="margin-right: 0rem;">
+          <div class="content has-text-centered">
+            <img src="asset/data_comp2.png" alt="data-overview" style="max-width: 50%;"/>
+          </div>
+        </div>
+      </div>
+      <div class="columns is-centered">
+        <div class="column" style="margin-right: 0rem;">
+          <div class="content has-text-centered">
+            <img src="asset/data_comp3.png" alt="data-overview" style="max-width: 50%;"/>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</section>
+
+<section class="section">
   <div class="container" style="margin-top: -150px; margin-bottom: -100px;">
     <div class="columns is-centered m-6">
       <div class="column is-full has-text-centered content">
@@ -247,10 +322,6 @@
               <img src="asset/hallu_inve1.png" alt="geometric reasoning" width="90%"/>
               <p> 
               description
-              <!-- Accuracy scores of one leading LLM (i.e., PoT GPT-4), four primary LMMs, random chance, and human performance our proposed 
-              <img src="static/images/mathvista.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
-              <span class="mathvista">MathVista</span>
-              across mathematical reasoning and visual context types. PoT refers to program-of-thought prompting, and PoT GPT-4 is a textual LLM augmented with the caption and OCR text. GPT-4V is manually evaluated via the playground chatbot. <b class="best-score-text" style="color: #C6011F"> The scores of Gemini Ultra are from the Gemini Team, Google.</b> -->
               </p>
             </div>
           </div>
@@ -259,10 +330,6 @@
               <img src="asset/hallu_inve2.png" alt="geometric reasoning" width="90%"/>
               <p> 
               description
-              <!-- Accuracy scores of one leading LLM (i.e., PoT GPT-4), four primary LMMs, random chance, and human performance our proposed 
-              <img src="static/images/mathvista.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
-              <span class="mathvista">MathVista</span>
-              across mathematical reasoning and visual context types. PoT refers to program-of-thought prompting, and PoT GPT-4 is a textual LLM augmented with the caption and OCR text. GPT-4V is manually evaluated via the playground chatbot. -->
               </p>
             </div>
           </div>
@@ -271,43 +338,12 @@
               <img src="asset/hallu_inve3.png" alt="geometric reasoning" width="90%"/>
               <p> 
               description
-              <!-- Accuracy scores of one leading LLM (i.e., PoT GPT-4), four primary LMMs, random chance, and human performance our proposed 
-              <img src="static/images/mathvista.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
-              <span class="mathvista">MathVista</span>
-              across mathematical reasoning and visual context types. PoT refers to program-of-thought prompting, and PoT GPT-4 is a textual LLM augmented with the caption and OCR text. GPT-4V is manually evaluated via the playground chatbot. -->
               </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-</section>
-
-
-<section class="section">
-  <div class="container" style="margin-bottom: 2vh;">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Introduction</h2>
-        <div class="content has-text-justified">
-          <p>
-          Recent advancements in large multimodal models (LMMs) have significantly enhanced performance across diverse tasks, with ongoing efforts to further integrate additional modalities such as video and audio. 
-          However, most existing LMMs remain vulnerable to hallucinations, <b> the discrepancy between the factual multimodal input and the generated textual output </b>, which has limited their applicability in various real-world scenarios.
-          </p>
-          <p>
-          This paper presents the first systematic investigation of hallucinations in LMMs involving the three most common modalities: language, visual, and audio. 
-          Our study reveals two key contributors to hallucinations: <b> overreliance on unimodal priors and spurious inter-modality correlations. </b>
-          </p>
-          <p>
-          To address these challenges, we introduce the benchmark <img src="asset/cmm_logo.png" style="width:1.5em;vertical-align: middle" alt="Logo"/><i><b>The Curse of Multi-Modalities</b></i> (<b>CMM</b>), which comprehensively evaluates hallucinations in LMMs, providing a detailed analysis of their underlying issues. Our findings highlight key vulnerabilities, including imbalances in modality integration and biases from training data, underscoring the need for balanced cross-modal learning and enhanced hallucination mitigation strategies. 
-          Based on our observations and findings, we suggest potential research directions that could enhance the reliability of LMMs.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Abstract. -->
-</div>
 </section>
 
 <section class="section">
@@ -585,287 +621,120 @@
             
 <section class="section">
   <div class="container">
-    <div class="columns is-centered has-text-centered">
-      <!-- <div class="column is-full-width has-text-centered"> -->
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Overview</h2>
-        <div class="content has-text-justified">
-          <p>
-          Recent advancements in large multimodal models (LMMs) have significantly enhanced performance across diverse tasks, with ongoing efforts to further integrate additional modalities such as video and audio. However, most existing LMMs remain vulnerable to hallucinations, <b>the discrepancy between the factual multi-modal input and the generated textual output</b>, which has limited their applicability in various real-world scenarios. This paper presents the first systematic investigation of hallucinations in LMMs involving the three most common modalities: language, visual, and audio. Our work distinguishes from existing benchmarks through four key features:
-          <ul>
-            <li><b>Essential Multi-Modalities:</b> We analyze hallucinations and evaluate LMMs across the three fundamental modalities: Language, Visual, and Audio.</li>
-            <li><b>Systematic Hallucination Investigation:</b> Our study reveals two key contributors to hallucinations: <b>overreliance on unimodal priors</b> and <b>spurious inter-modality correlations.</b></li>
-            <li><b>Comprehensive Diagnosis:</b> CMM defines hallucinations with nuanced subcategories and granularities, enabling comprehensive diagnosis of LMM vulnerabilities across various modalities.</li>
-            <li><b>Quality in Annotations:</b> All data are newly annotated by humans, not from any existing video dataset, ensuring diversity and quality.</li>
-          </ul>
-          </p>
-
-          <!-- <div id="results-carousel" class="carousel results-carousel">
-            <div class="box m-5">
-              <div class="content has-text-centered">
-                <img src="static/images/our_new_3_datasets.png" alt="algebraic reasoning" width="80%"/>
-                <p> Examples of our newly annotated datasets: IQTest, FunctionQA, and PaperQA.</p>
-              </div>
-            </div>
-            <div class="box m-5">
-              <div class="content has-text-centered">
-                <img src="static/images/source_dataset.png" alt="arithmetic reasoning" width="50%"/>
-                <p> Summary of the 31 different source datasets in <img src="static/images/mathvista.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
-                  <span class="mathvista">MathVista</span>.
-              </div>
-            </div>
-          </div> -->
-
-          <!-- <p>
-            All the data examples were divided into two subsets: testmini and test. 
-            <ul>
-              <li><b>testmini</b>: 1,000 examples used for model development, validation, or for those with limited computing resources.</li>
-              <li><b>test</b>: 5,141 examples for standard evaluation. Notably,
-                the answer labels for test will NOT be publicly released.</li>
-            </ul>
-            You can download the dataset on <a href="https://huggingface.co/datasets/AI4Math/MathVista" target="_blank">Hugging Face Dataset</a>.
-          </p> -->
-
-        </div>
-      </div>
-    </div>
-    <div class="columns is-centered">
-      <div class="column" style="margin-right: 0rem;">
-        <div class="content has-text-centered">
-          <img src="asset/data_comp1.png" alt="data-overview" style="max-width: 70%;"/>
-          <p> 
-            Composition of <img src="asset/cmm_logo.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
-            <span class="mathvista">CMM</span> dataset.<br/>
-          </p> 
-        </div>
-      </div>
-      </div>
-      <div class="columns is-centered">
-        <div class="column" style="margin-right: 0rem;">
-          <div class="content has-text-centered">
-            <img src="asset/data_comp2.png" alt="data-overview" style="max-width: 100%;"/>
-          </div>
-        </div>
-      </div>
-      <div class="columns is-centered">
-        <div class="column" style="margin-right: 0rem;">
-          <div class="content has-text-centered">
-            <img src="asset/data_comp3.png" alt="data-overview" style="max-width: 100%;"/>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    
     <div class="columns is-centered m-6">
       <div class="column is-full has-text-centered content">
         <h2 class="title is-3">Examples</h2>
-        <p>One example for each <b>mathematical reasoning</b> skill required in <img src="static/images/mathvista.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
-          <span class="mathvista">MathVista</span></p>
+        <p>Examples of <b>over-reliance hallucinations</b> in <img src="asset/cmm_logo.png" style="width:1.0em;vertical-align: middle" alt="Logo"/> CMM.</p>
 
         <div id="results-carousel" class="carousel results-carousel">
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="static/images/examples/ari.png" alt="arithmetic reasoning" width="60%"/>
-              <p>Arithmetic Reasoning</p>
+              <video controls width="600">
+                <source src="asset/over-reliance/2385_video.mp4" type="video/mp4" />
+              </video>
+              <p align="left">
+                <b>Question:</b> "Did you see shoes are worn on feet in the video?"<br>
+                <b>Answer:</b> "No."<br>
+                This is a <b>language domain over-reliance hallucination</b>. The model hallucinates the wearing of shoes on feet because <b>the shoes are usually worn on feet in common sense</b>.
+              </p>
             </div>
           </div>
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="static/images/examples/alg.png" alt="algebraic reasoning" width="60%"/>
-              <p>Algebraic Reasoning</p>
+              <video controls width="600">
+                <source src="asset/over-reliance/1271_video.mp4" type="video/mp4" />
+              </video>
+              <p align="left">
+                <b>Question:</b> "Did you hear hammer hitting in the audio?"<br>
+                <b>Answer:</b> "No."<br>
+                This is a <b>visual domain over-reliance hallucination</b>. The model hallucinates the hitting of hammer because <b>the hammer appears in the video</b> although there is only whisperring sound and no sound of hitting.
+              </p>
             </div>
           </div>
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="static/images/examples/geo.png" alt="geometric reasoning" width="60%"/>
-              <p>Geometric Reasoning</p>
+              <video controls width="600">
+                <source src="asset/over-reliance/1629_video.mp4" type="video/mp4" />
+              </video>
+              <p align="left">
+                <b>Question:</b> "Did you see thunder in the video?"<br>
+                <b>Answer:</b> "No."<br>
+                This is a <b>audio domain over-reliance hallucination</b>. The model hallucinates the thunder because <b>the thunder sound appears in the audio</b>, but there is no thunder in the video.
+              </p>
             </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/examples/log.png" alt="logical reasoning" width="60%"/>
-              <p>Logical Reasoning</p>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/examples/num.png" alt="numeric reasoning" width="60%"/>
-              <p>Numeric Reasoning</p>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/examples/sta.png" alt="statistical reasoning" width="60%"/>
-              <p>Statistical Reasoning</p>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/examples/sci.png" alt="scientific reasoning" width="60%"/>
-              <p>Scientific Reasoning</p>
-            </div>
-          </div>
-
-          
+          </div>          
         </div>
 
         <br><br>
-        <p>One example for each <b>visual context</b> type required in <img src="static/images/mathvista.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
-          <span class="mathvista">MathVista</span></p>
+
+        <p>Examples of <b>inter-modality hallucinations</b> in <img src="asset/cmm_logo.png" style="width:1.0em;vertical-align: middle" alt="Logo"/> CMM.</p>
 
         <div id="results-carousel" class="carousel results-carousel">
 
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="static/images/contexts/1_Geometry_Diagram.png" alt="arithmetic reasoning" width="80%"/>
-              <p>Geometry Diagram</p>
+              <video controls width="600">
+                <source src="asset/inter-modality/hear bird no see tree.mp4" type="video/mp4" />
+              </video>
+              <p align="left">
+                <b>Question:</b> "Did you see trees in this video?" <br>
+                <b>Answer:</b> "No."<br>
+                This is a example of spurious Visual-Audio-Language (VAL) Correlations. The model <b>hears birds chirping in the audio and may hallucinate seeing trees</b> because of <b>the high co-occurrence of "bird chirping" in audio captions and "trees" in corresponding video captions </b> in the video-audio-text joint pretraining data.
+              </p>
             </div>
           </div>
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="static/images/contexts/2_Synthetic_Scene.png" alt="arithmetic reasoning" width="80%"/>
-              <p>Synthetic Scene</p>
+              <video controls width="600">
+                <source src="asset/inter-modality/see person no see phone.mp4" type="video/mp4" />
+              </video>
+              <p align="left">
+                <b>Question:</b> "Did you see a phone in this video?" <br>
+                <b>Answer:</b> "No."<br>
+                This is a example of spurious Visual-Language (VL) Correlations. While a person is visible in the video, the model may hallucinate the presence of a phone due to <b>the frequent co-occurrence of "person" and "phone"</b> in the video-text pre-training data.
+              </p>
             </div>
           </div>
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="static/images/contexts/3_Bar_Chart.png" alt="arithmetic reasoning" width="65%"/>
-              <p>Bar Chart</p>
+              <audio controls width="600">
+                <source src="asset/inter-modality/dog whimperring not barking.wav" />
+              </audio>
+              <p align="left">
+                <b>Question:</b> "Did you hear a dog barking in the audio?" <br>
+                <b>Answer:</b> "No."<br>
+                This is a example of spurious Audio-Language (AL) Correlations. While the audio just contains a dog whimpering, the model may hallucinate the sound of barking due to <b>the frequent co-occurrence of "dog" and "barking" during audio-text pretraining</b>.
+              </p>
             </div>
           </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/contexts/4_Natural_Image.png" alt="arithmetic reasoning" width="80%"/>
-              <p>Natural Image</p>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/contexts/5_Scientific_Figure.png" alt="arithmetic reasoning" width="80%"/>
-              <p>Scientific Figure</p>
-            </div>
-          </div>
-
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/contexts/6_Table.png" alt="arithmetic reasoning" width="80%"/>
-              <p>Table</p>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/contexts/7_Function_Plot.png" alt="arithmetic reasoning" width="80%"/>
-              <p>Function Plot</p>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/contexts/8_Abstract_Scene.png" alt="arithmetic reasoning" width="80%"/>
-              <p>Abstract Scene</p>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/contexts/9_Puzzle_Test.png" alt="arithmetic reasoning" width="80%"/>
-              <p>Puzzle Test</p>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/contexts/10_Scatter_Plot.png" alt="arithmetic reasoning" width="80%"/>
-              <p>Scatter Plot</p>
-            </div>
-          </div>
-          
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/contexts/11_Line_Plot.png" alt="arithmetic reasoning" width="80%"/>
-              <p>Line Plot</p>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/contexts/12_Pie_Chart.png" alt="arithmetic reasoning" width="75%"/>
-              <p>Pie Chart</p>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/contexts/13_Document_Image.png" alt="arithmetic reasoning" width="80%"/>
-              <p>Document Image</p>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/contexts/14_Medical_Image.png" alt="arithmetic reasoning" width="80%"/>
-              <p>Medical Image</p>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/contexts/15_Others.png" alt="arithmetic reasoning" width="45%"/>
-              <p>Others</p>
-            </div>
-          </div>
-
         </div>
       </div>
     </div>
+
     <div class="columns is-centered m-6">
       <div class="column is-full has-text-centered content">
         <h2 class="title is-3">Statistics</h2>
-        <p>Notable statistics of <img src="static/images/mathvista.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
-          <span class="mathvista">MathVista</span></p>
+        <p>Notable statistics of <img src="asset/cmm_logo.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
+          <span class="mathvista">CMM</span></p>
         <div id="results-carousel" class="carousel results-carousel">
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="static/images/statistics/context-dist.png" alt="context" class="stats-image">
-              <p>Distribution of visual context types within <img src="static/images/mathvista.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
-                <span class="mathvista">MathVista</span></p>
+              <img src="asset/stats_1.jpg" alt="context" class="stats-image">
+              <p>Distribution of visual context types within <img src="asset/cmm_logo.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
+                <span class="mathvista">CMM</span></p>
             </div>
           </div>
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="static/images/statistics/category.png" alt="category" class="stats-image"/>
+              <img src="asset/stats_2.jpg" alt="category" class="stats-image"/>
               <p>Category distribution of problems within <img src="static/images/mathvista.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
                 <span class="mathvista">MathVista</span></p>
             </div>
           </div>
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="static/images/statistics/grade-levels.png" alt="grade" class="stats-image"/>
+              <img src="asset/stats_3.jpg" alt="grade" class="stats-image"/>
               <p>Distribution of questions across different grade levels within <img src="static/images/mathvista.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
-                <span class="mathvista">MathVista</span></p>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/statistics/qs-len.png" alt="qs-len" class="stats-image"/>
-              <p>Distribution of the number of words per question in <img src="static/images/mathvista.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
-                <span class="mathvista">MathVista</span>. 
-                <!-- Questions with a length greater than 60 are categorized as 61 for visualization simplicity -->
-              </p>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/statistics/reasoning.png" alt="reasoning" class="stats-image"/>
-              <p>Portion of each mathematical reasoning type involved in the problems of <img src="static/images/mathvista.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
-                <span class="mathvista">MathVista</span></p>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/statistics/reasoning-count.png" alt="reasoning-count" class="stats-image"/>
-              <p>Distribution of the number of mathematical reasoning types within <img src="static/images/mathvista.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
-                <span class="mathvista">MathVista</span></p>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/statistics/task-type.png" alt="task-type" class="stats-image"/>
-              <p>Task type distribution of problems within <img src="static/images/mathvista.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
                 <span class="mathvista">MathVista</span></p>
             </div>
           </div>
@@ -898,7 +767,7 @@
         <div id="results-carousel" class="carousel results-carousel">
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="static/images/results-figures/score_leaderboard_gpt4v.png" alt="grade-lv" width="60%"/>
+              <img src="asset/res_tab2.jpg" alt="grade-lv" width="60%"/>
               <p>Accuracy scores of primary baselines on the testmini subset (1,000 examples) of <img src="static/images/mathvista.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
                 <span class="mathvista">MathVista</span>. 
                 <br>
@@ -907,7 +776,7 @@
           </div>
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="static/images/results-figures/bard_error.png" alt="grade-lv" width="70%"/>
+              <img src="asset/res_tab3.jpg" alt="grade-lv" width="70%"/>
               <p>
                 Error analysis of Bard results: (a) presents errors in answers and explanations; <br>
                 (b) delves into the details of wrong explanations. <br>
@@ -917,141 +786,16 @@
           </div>
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="static/images/results-figures/grade-lv.png" alt="grade-lv" width="90%"/>
+              <img src="asset/res_tab4.jpg" alt="grade-lv" width="40%"/>
               <p>Average accuracy scores across different grade levels for leading foundation models</p>
             </div>
           </div>
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="static/images/results-figures/contexts.png" alt="contexts" width="90%"/>
+              <img src="asset/res_tab5.jpg" alt="contexts" width="40%"/>
               <p>Accuracy scores of leading baselines across various visual contexts</p>
             </div>
           </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-figures/ablation.png" alt="geometric reasoning" width="90%"/>
-              <p>Average accuracy scores of LLM baselines under various visual inputs</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="columns is-centered m-6">
-      <div class="column is-full has-text-centered content">
-        <h2 class="title is-3">Visualization Examples</h2>
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-examples/5.png" alt="" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-examples/6.png" alt="" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-examples/37.png" alt="" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-examples/38.png" alt="" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-examples/39.png" alt="" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-examples/40.png" alt="" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-examples/41.png" alt="" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-examples/42.png" alt="" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-examples/43.png" alt="" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-examples/44.png" alt="" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-examples/45.png" alt="" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-examples/46.png" alt="" width="50%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-examples/47.png" alt="" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-examples/48.png" alt="" width="40%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-examples/49.png" alt="" width="40%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-examples/50.png" alt="" width="40%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-examples/51.png" alt="" width="40%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-examples/52.png" alt="" width="40%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-examples/53.png" alt="" width="40%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-examples/54.png" alt="" width="40%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-examples/55.png" alt="" width="55%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-examples/56.png" alt="" width="50%"/>
-            </div>
-          </div>   
-
         </div>
       </div>
     </div>

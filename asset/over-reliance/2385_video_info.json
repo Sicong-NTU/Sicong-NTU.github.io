@@ -1,0 +1,31 @@
+{
+    "question": "Did you see shoes are worn on feet in the video? Answer with yes or no.",
+    "output": "Yes, the video shows shoes being worn on feet.",
+    "answer": "no",
+    "pred": "yes",
+    "yes_probs": [
+        0.7191833853721619,
+        0.899010181427002,
+        0.9543745517730713,
+        0.051838863641023636
+    ],
+    "no_probs": [
+        0.1137913390994072,
+        0.031003709882497787,
+        0.00872108619660139,
+        0.01129886880517006
+    ],
+    "data_sample": {
+        "category": "over-reliance_unimodal_priors",
+        "sub_category": "overrely_language_ignore_visual",
+        "modality": "visual",
+        "granularity": "event-level",
+        "correlation_type": null,
+        "keyword": "shoes are worn on feet+shoes are worn on fingers",
+        "video_path": "./raw_files/over-reliance_unimodal_priors/overrely_language_ignore_visual/event-level_all_videos/8_0.mp4",
+        "audio_path": null,
+        "question": "Did you see shoes are worn on feet in the video?",
+        "answer": "no",
+        "output": "Yes, the video shows shoes being worn on feet."
+    }
+}
