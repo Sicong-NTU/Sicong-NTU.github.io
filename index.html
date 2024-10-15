@@ -351,14 +351,14 @@
     
     <div class="columns is-centered">
       <div class="column is-full has-text-centered content">
-        <h2 class="title is-3" id="leaderboard">Leaderboard on CMM (VAL models)</h2>
+        <h2 class="title is-3" id="leaderboard">CMM Leaderboard</h2>
         <div class="content">
-          <p class="mt-3">Accuracy scores of Visual-Audio LMMs on <img src="asset/cmm_logo.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
+          <p class="mt-3">Perception Accuracy (PA) and Hallucination Resistance (HR) scores of Visual-Audio LMMs on <img src="asset/cmm_logo.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
             <span class="CMM">CMM</span>.
           </p>
-
+          <p class="mt-3">Models are ranked based on the average score of PA and HR. 🥇: The best score in each category. 🥈: The second best score in each category. 🥉: The third best score in each category.</p>
+          <h3 class="title is-3" id="leaderboard">Visual-Audio-LLMs</h3>
           <div id="val_leaderboard"></div>
-
           <table id="results">
               <tr>
                   <th rowspan="3" ><strong>#</strong></th>
@@ -366,16 +366,16 @@
                   <th rowspan="3" ><strong>Source</strong></th>
                   <th rowspan="3" ><strong>Date</strong></th>
                   <th rowspan="2" colspan="2" ><strong><u>Overall</u></strong></th>
-                  <td colspan="6" ><strong>Inter-modality</strong></td>
-                  <td colspan="6" ><strong>Overreliance</strong></td>
+                  <td colspan="6" ><strong>Spurious Inter-modality Correlations</strong></td>
+                  <td colspan="6" ><strong>Overreliance on Unimodal Priors</strong></td>
               </tr>
               <tr>
-                  <td colspan="2" ><strong>VL</strong></td>
-                  <td colspan="2" ><strong>AL</strong></td>
-                  <td colspan="2" ><strong>VAL</strong></td>
-                  <td colspan="2" ><strong>V</strong></td>
-                  <td colspan="2" ><strong>A</strong></td>
-                  <td colspan="2" ><strong>L</strong></td>
+                  <td colspan="2" ><strong>Visual-Language</strong></td>
+                  <td colspan="2" ><strong>Audio-Language</strong></td>
+                  <td colspan="2" ><strong>Visual-Audio-Language</strong></td>
+                  <td colspan="2" ><strong>Visual Dominance</strong></td>
+                  <td colspan="2" ><strong>Audio Dominance</strong></td>
+                  <td colspan="2" ><strong>Language Dominance</strong></td>
               </tr>
               <tr>
                 <td ><strong>pa</strong></td>
